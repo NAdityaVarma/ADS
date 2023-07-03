@@ -1,0 +1,36 @@
+import random
+
+def roll_dice():
+    min_value = 1
+    max_value = 6
+    return random.randint(min_value, max_value)
+
+while True:
+    print("Rolling the dice...")
+    print("The dice shows:", roll_dice())
+    play_again = input("Do you want to roll again? (yes/no): ")
+    if play_again.lower() != "yes" and play_again.lower() != "y":
+        break
+
+print("Thanks for playing!")
+
+In this code, we define a roll_dice function that uses the randint function from the random module to generate a random integer between 1 and 6, simulating a dice roll.
+
+We use a while loop to repeatedly roll the dice as long as the user wants to continue. Inside the loop, we print a message indicating that the dice is being rolled, call the roll_dice function to get a random number, and print the result.
+
+After each roll, we ask the user if they want to roll the dice again. If the user enters "yes" or "y", the loop continues to the next iteration and rolls the dice again. If the user enters anything other than "yes" or "y", the loop breaks and the game ends.
+
+Finally, we print a thank you message when the game is finished.
+
+You can run this code to simulate rolling a dice and play the game by typing "yes" or "y" to roll again, or typing anything else to stop rolling.
+
+import random
+
+def roll_dice():
+    return random.randint(1, 6)
+
+print(roll_dice())
+
+In this code, we import the random module, which provides functions for generating random numbers. The roll_dice function uses the randint function from the random module to generate a random integer between 1 and 6, simulating a dice roll. Finally, we test the function by calling it and printing the result.
+
+Each time you run this code, it will simulate a dice roll and print a random number between 1 and 6.
